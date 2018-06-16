@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../../Estilos/Estilos.css">
+  <link rel="stylesheet" type="text/css" href="../../Estilos/Modal.css">
+  <link rel="stylesheet" type="text/css" href="../../Estilos/EsUser.css">
+  <link rel="stylesheet" type="text/css" href="Usuario.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="../../JavaScrit/jquery-latest.js"></script>
+  <script type="text/javascript" src="../../JavaScrit/scrit.js"></script>
+
+  <script type="text/javascript">
+    function desplegar(_valor,nombre){
+      document.getElementById(nombre).style.visibility=_valor;
+    };
+  </script>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Generico<span>Logo</span></h1>
+  
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../../index.html"><i class="fa fa-home site-nav--icon"></i>Inicio</a></li> 
+          <li><a href="../../Login.html"><i class="fa fa-info site-nav--icon"></i>Login</a></li><!--Direccionar validando el tipo de usuario-->
+          <li><a href="../../Conocenos.html"><i class="fa fa-pencil site-nav--icon"></i>Conocenos</a></li>
+        </ul>
+      </nav>
+  
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="ConUser">
+    <div class="ConArreglo">
+
+        <div class="MenuUser">
+          <!--
+            Aqui va el menu de usuario
+          -->
+          <div class="SecMenu"><h1>MENU</h1></div>
+          <br>
+          <a href="javascript:desplegar('visible','bgventana');">Calificaciones</a>
+          <br><br>
+          <a href="javascript:desplegar('visible','bgventana1');">Resuldados Generales</a>
+          <br><br>
+          <a href="">Cerrar Sesión</a>
+        </div>
+
+        <div class="NoticiasUser">
+          <div class="SecMenu"><h1>NOTICIAS</h1></div>
+          <br>
+          <a href="javascript:desplegar('visible','bgventana2');">Ganadores</a>
+          <br><br>
+        </div>
+    </div>
+
+    <div class="RegisProyet">
+      <div class="formulario">
+        <div class="ConvocatoriasPadre">
+          <p>
+            <h1>COMBOCATORIAS</h1>
+          </p>
+        </div>
+
+        <div class="ConvocatoriasHijos" onclick="window.location ='RegistroProyectoUsuario.html';">
+          <div class="combData">
+            <div class="combData1">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+         <div class="ConvocatoriasHijos" onclick="window.location ='RegistroProyectoUsuario.html';">
+          <div class="combData">
+            <div id="combData1">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="bgventana">
+    <div id="ventana">
+      <h1>Calificaciones</h1>
+      <a id="Modsalir" href="javascript:desplegar('hidden','bgventana');">X</a>
+
+      <form action="../../PHP/MostrarProyectos.php" method="POST">
+          <input id="Agrebtn" type="submit" name="btnAgregar" value="Mostrar Calificaciones">
+      </form>
+    </div>
+  </div>
+
+  <div id="bgventana1">
+    <div id="ventana">
+      <h1>Resultados Generales</h1>
+      <a id="Modsalir" href="javascript:desplegar('hidden','bgventana1');">X</a>
+      <br>
+      <br>
+      <br>
+      <p><h1>aqui tu busca we como aser una tablita es muy fasil we
+      no la ago yo porque ocupo tener vistas y para eso ocupo lo que regresa we</h1></p>
+    </div>
+  </div>
+
+  <div id="bgventana2">
+    <div id="ventana">
+      <h1>Ganadores</h1>
+      <a id="Modsalir" href="javascript:desplegar('hidden','bgventana2');">X</a>
+      <br>
+      <br>
+      <br>
+      <p><h1>aqui se pondra quien obtube la mejor calificacion</h1></p>
+    </div>
+  </div>
+
+  <!--Pie de pagina-->
+  <div id="footer">
+    <p>Pie de pagina</p>
+  </div>
+
+</body>
+</html>

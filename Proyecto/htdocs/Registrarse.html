@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  <link rel="stylesheet" type="text/css" href="Estilos/Estilos.css">
+  <link rel="stylesheet" type="text/css" href="Estilos/codeLogin.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="JavaScrit/jquery-latest.js"></script>
+  <script type="text/javascript" src="JavaScrit/scrit.js"></script>
+</head>
+<body>
+
+  <script type="text/javascript">
+    if(!$("input[name=1]:checked").val()){
+    }
+  </script>
+  <header>
+
+    <div class="container">
+      <h1 class="logo">Encuestas<span>Logo</span></h1>
+  
+      <nav class="site-nav">
+          <ul>
+            <li><a href="index.html"><i class="fa fa-home site-nav--icon"></i>Inicio</a></li> 
+            <li><a href="Login.html"><i class="fa fa-info site-nav--icon"></i>Login</a></li><!--Direccionar validando el tipo de usuario-->
+            <li><a href="Conocenos.html"><i class="fa fa-pencil site-nav--icon"></i>Conócenos</a></li>
+          </ul> 
+      </nav>
+  
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="Conteiner">
+
+      <div class="login-box">
+        <form action="/PHP/registrarse.php" method="POST"> 
+          <label for="nombre">Nombre:</label>
+          <input name="nombre" type="text" id="nombre" class="nombre" placeholder="Escriba su nombre completo" autofocus=""/ >
+
+          <label for="usuario">Usuario:</label>
+          <input name="usuario" type="text" id="usuario" class="usuario" placeholder="Escriba su nombre de usuario" />
+
+          <label for="pass">Password:</label>
+          <input name="pass" type="password" id="pass" class="pass" placeholder="Escriba su contraseña"/ >
+
+          <label for="repass">Repetir Password:</label>
+          <input name="repass" type="password" id="repass" class="repass" placeholder="Repita su contraseña" />
+
+          <label for="correo">Correo:</label>
+          <input name="correo" type="text" id="correo" class="correo" placeholder="Escriba su correo electrónico" />
+
+          <label for="tipo">Tipo de Usuario: </label>
+          <input name="tipo" type="text" id="tipo" class="tipo" placeholder="Usuario o Evaluador" />
+
+          <p id="bot"><input name="submit" type="submit" id="boton" value="Registrar" class="boton"/></p>
+  
+        </form>
+      </div>
+
+    </div>
+  </main>
+  <div id="footer">
+    <p>Pie de página</p>
+  </div>
+
+</body>
+</html>

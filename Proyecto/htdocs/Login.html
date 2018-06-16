@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  <link rel="stylesheet" type="text/css" href="Estilos/Estilos.css">
+  <link rel="stylesheet" type="text/css" href="Estilos/codeLogin.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="JavaScrit/jquery-latest.js"></script>
+  <script type="text/javascript" src="JavaScrit/scrit.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Generico<span>Logo</span></h1>
+  
+      <nav class="site-nav">
+          <ul>
+            <li><a href="index.html"><i class="fa fa-home site-nav--icon"></i>Inicio</a></li> 
+            <li><a href="Login.html"><i class="fa fa-info site-nav--icon"></i>Login</a></li><!--Direccionar validando el tipo de usuario-->
+            <li><a href="Conocenos.html"><i class="fa fa-pencil site-nav--icon"></i>Conócenos</a></li>
+          </ul> 
+      </nav>
+  
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="Conteiner">
+      <div class="login-box">
+        <h1>Login</h1>
+        <form action="/PHP/index.php" method="POST">
+          <!-- USERNAME INPUT -->
+          <label for="usuario">Usuario: </label>
+          <input name="usuario" id="usuario" type="text" placeholder="Ingresa usuario">
+          <!-- PASSWORD INPUT -->
+          <label for="pass">Contraseña: </label>
+          <input name="pass" id="pass" type="password" placeholder="Ingresa contraseña">
+          <label for="tipousuario">Tipo de usuario: </label>
+          <input name="tipousuario" id="tipousuario" type="text" placeholder="Usuario o Evaluador">
+          <input type="submit" value="Ingresar">
+          
+          <a href="Olvidaste.html">Olvidaste Tu Contraseña</a><br>
+          <a href="Registrarse.html">Crear Cuenta</a>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer">
+    <p>Pie de pagina</p>
+  </div>
+
+</body>
+</html>

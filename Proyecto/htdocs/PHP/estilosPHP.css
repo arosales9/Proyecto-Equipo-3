@@ -1,0 +1,17 @@
+.tabla{
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10%;
+	color: white;
+	width: 80%;
+}
+
+body{
+	background-color:rgb(46, 4, 4);
+}
+
+h1{
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+}
