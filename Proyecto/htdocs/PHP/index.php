@@ -1,11 +1,16 @@
 <?php
 session_start();
+ob_start();
+
+$_SESSION['NOMBREUSER'] = $_POST['usuario'];
 
 require('configuration.php');
 
 $username = $_POST['usuario'];
 $password = $_POST['pass'];
 $tipoUser = $_POST['tipousuario'];
+
+
 
 
 if (isset($username) && isset($password)) {
@@ -29,9 +34,9 @@ if (isset($username) && isset($password)) {
       $_SESSION['tipousuario'] = $row['tipousuario'];
       
       if($_SESSION['tipousuario'] == "usuario"){
-      header("Location: ../UsuariosHtml/VistasUsuarios/Usuario.html");
+      header("Location: ../UsuariosHtml/VistasUsuarios/Usuario.php");
       }else{
-      header("Location: ../UsuariosHtml/VistasEvaluadores/Evaluador.html");
+      header("Location: ../UsuariosHtml/VistasEvaluadores/Evaluador.php");
       }
     } else {
       echo "Credenciales incorrectas.";

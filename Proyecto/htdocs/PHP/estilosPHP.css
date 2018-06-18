@@ -1,17 +1,15 @@
 .tabla{
 	margin: 0 auto;
 	text-align: center;
-	padding-top: 10%;
-	color: white;
+	color: black;
 	width: 80%;
+	border: solid 1px black;
 }
 
-body{
-	background-color:rgb(46, 4, 4);
-}
-
-h1{
-	color: white;
-	margin: 0 auto;
+#Calif{
 	text-align: center;
+}
+
+table, tr, td, th{
+	border: solid 1px black;
 }
